@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    min-width: 1024px;
+    background-color: darkslateblue;
+}
+
+.header .container {
+    margin: 0 auto;
+    width: 1024px;
+    height: 100px;
+}
+
+.header .container .logo_text {
+    width: 170px;
+    padding: 20px 0 0 4px;
+    text-transform: uppercase;
+    font-size: 2em;
+    float: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header .container .menubar {
+    width: 700px;
+    height: 60px;
+    padding-top: 10px;
+    float: right;
+}
+
+.header .container .menubar ul.menu {
+    float: right;
+    padding-top: 25px;
+}
+
+.header .container .menubar ul.menu li {
+    list-style: none;
+    float: left;
+}
+
+.header .container .menubar ul.menu li a {
+    display: block;
+    padding: 0 30px 0 20px;
+    /* margin: 0 20px 0 20px; */
+    color: #bcb6b6;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header .container .menubar ul.menu li a:hover {
+    color: #525b83;
+}
+
+.header .container .logo_text .active {
+    color: #525b83;
+}
+
+.header .container .logo_text .box {
+    color: #bcb6b6;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+    .header {
+        background-color: #46c071;
+        min-width: 100%;
+    }
+    .header .container {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .header .container .menubar {
+        width: 100%;
+        float: none;
+        height: 100%;
+        padding: 0;
+    }
+    .header .container .menubar ul.menu {
+        float: none;
+        text-align: center;
+        padding: 5px;
+    }
+    .header .container .menubar ul.menu li {
+        float: none;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .header .container .menubar ul.menu li:hover {
+        background-color: #525b83;
+    }
+    .header .container .menubar ul.menu li:hover a {
+        color: #fff;
+    }
+    .header .container .logo_text {
+        width: 100%;
+        float: none;
+        padding: 1%;
+        letter-spacing: 4px;
+    }
+}
